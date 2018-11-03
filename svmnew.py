@@ -26,6 +26,7 @@ svc = svm.SVC(kernel='linear', C=C, decision_function_shape='ovr').fit(X, y)
 Z = svc.predict(X_plot)
 Z = Z.reshape(xx.shape)
 
+# plotting a figure of data points 
 plt.figure(figsize=(15, 5))
 plt.subplot(121)
 plt.contourf(xx, yy, Z, cmap=plt.cm.tab10, alpha=0.3)
